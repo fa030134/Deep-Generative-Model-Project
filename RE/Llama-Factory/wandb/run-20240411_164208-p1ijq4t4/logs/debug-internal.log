@@ -1,0 +1,211 @@
+2024-04-11 16:42:08,314 INFO    StreamThr :79135 [internal.py:wandb_internal():86] W&B internal server running at pid: 79135, started at: 2024-04-11 16:42:08.313319
+2024-04-11 16:42:08,315 DEBUG   HandlerThread:79135 [handler.py:handle_request():146] handle_request: status
+2024-04-11 16:42:08,323 INFO    WriterThread:79135 [datastore.py:open_for_write():87] open: /cpfs01/shared/public/yz/Llama-Factory/wandb/run-20240411_164208-p1ijq4t4/run-p1ijq4t4.wandb
+2024-04-11 16:42:08,324 DEBUG   SenderThread:79135 [sender.py:send():382] send: header
+2024-04-11 16:42:08,325 DEBUG   SenderThread:79135 [sender.py:send():382] send: run
+2024-04-11 16:42:09,531 INFO    SenderThread:79135 [dir_watcher.py:__init__():211] watching files in: /cpfs01/shared/public/yz/Llama-Factory/wandb/run-20240411_164208-p1ijq4t4/files
+2024-04-11 16:42:09,531 INFO    SenderThread:79135 [sender.py:_start_run_threads():1136] run started: p1ijq4t4 with start time 1712824928.313709
+2024-04-11 16:42:09,540 DEBUG   HandlerThread:79135 [handler.py:handle_request():146] handle_request: check_version
+2024-04-11 16:42:09,540 DEBUG   SenderThread:79135 [sender.py:send_request():409] send_request: check_version
+2024-04-11 16:42:10,063 DEBUG   HandlerThread:79135 [handler.py:handle_request():146] handle_request: run_start
+2024-04-11 16:42:10,067 DEBUG   HandlerThread:79135 [system_info.py:__init__():27] System info init
+2024-04-11 16:42:10,067 DEBUG   HandlerThread:79135 [system_info.py:__init__():42] System info init done
+2024-04-11 16:42:10,068 INFO    HandlerThread:79135 [system_monitor.py:start():194] Starting system monitor
+2024-04-11 16:42:10,068 INFO    SystemMonitor:79135 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-04-11 16:42:10,068 INFO    HandlerThread:79135 [system_monitor.py:probe():214] Collecting system info
+2024-04-11 16:42:10,069 INFO    SystemMonitor:79135 [interfaces.py:start():190] Started cpu monitoring
+2024-04-11 16:42:10,070 INFO    SystemMonitor:79135 [interfaces.py:start():190] Started disk monitoring
+2024-04-11 16:42:10,071 INFO    SystemMonitor:79135 [interfaces.py:start():190] Started gpu monitoring
+2024-04-11 16:42:10,072 INFO    SystemMonitor:79135 [interfaces.py:start():190] Started memory monitoring
+2024-04-11 16:42:10,073 INFO    SystemMonitor:79135 [interfaces.py:start():190] Started network monitoring
+2024-04-11 16:42:10,097 DEBUG   HandlerThread:79135 [system_info.py:probe():151] Probing system
+2024-04-11 16:42:10,103 DEBUG   HandlerThread:79135 [gitlib.py:_init_repo():56] git repository is invalid
+2024-04-11 16:42:10,104 DEBUG   HandlerThread:79135 [system_info.py:probe():199] Probing system done
+2024-04-11 16:42:10,104 DEBUG   HandlerThread:79135 [system_monitor.py:probe():223] {'os': 'Linux-4.19.91-014-kangaroo.2.10.13.5c249cdaf.x86_64-x86_64-with-glibc2.17', 'python': '3.8.16', 'heartbeatAt': '2024-04-11T08:42:10.098167', 'startedAt': '2024-04-11T08:42:08.289971', 'docker': None, 'cuda': None, 'args': ('--stage', 'sft', '--model_name_or_path', '/cpfs01/shared/public/yz/.cache/qwen_7b_chat/', '--do_train', '--dataset', 'info_train_1324_middle', '--finetuning_type', 'full', '--template', 'default', '--output_dir', '/cpfs01/user/yz426382/test', '--overwrite_cache', '--per_device_train_batch_size', '4', '--gradient_accumulation_steps', '4', '--lr_scheduler_type', 'cosine', '--logging_steps', '10', '--save_steps', '20', '--learning_rate', '5e-5', '--num_train_epochs', '7', '--plot_loss', '--fp16', '--seed', '0'), 'state': 'running', 'program': 'src/train_bash.py', 'codePathLocal': 'src/train_bash.py', 'codePath': 'src/train_bash.py', 'host': 'dsw-41278-6bf64d66bc-cb6np', 'username': 'root', 'executable': '/opt/conda/bin/python', 'cpu_count': 24, 'cpu_count_logical': 24, 'cpu_freq': {'current': 2900.0, 'min': 0.0, 'max': 0.0}, 'cpu_freq_per_core': [{'current': 2900.0, 'min': 0.0, 'max': 0.0}, {'current': 2900.0, 'min': 0.0, 'max': 0.0}, {'current': 2900.0, 'min': 0.0, 'max': 0.0}, {'current': 2900.0, 'min': 0.0, 'max': 0.0}, {'current': 2900.0, 'min': 0.0, 'max': 0.0}, {'current': 2900.0, 'min': 0.0, 'max': 0.0}, {'current': 2900.0, 'min': 0.0, 'max': 0.0}, {'current': 2900.0, 'min': 0.0, 'max': 0.0}, {'current': 2900.0, 'min': 0.0, 'max': 0.0}, {'current': 2900.0, 'min': 0.0, 'max': 0.0}, {'current': 2900.0, 'min': 0.0, 'max': 0.0}, {'current': 2900.0, 'min': 0.0, 'max': 0.0}, {'current': 2900.0, 'min': 0.0, 'max': 0.0}, {'current': 2900.0, 'min': 0.0, 'max': 0.0}, {'current': 2900.0, 'min': 0.0, 'max': 0.0}, {'current': 2900.0, 'min': 0.0, 'max': 0.0}, {'current': 2900.0, 'min': 0.0, 'max': 0.0}, {'current': 2900.0, 'min': 0.0, 'max': 0.0}, {'current': 2900.0, 'min': 0.0, 'max': 0.0}, {'current': 2900.0, 'min': 0.0, 'max': 0.0}, {'current': 2900.0, 'min': 0.0, 'max': 0.0}, {'current': 2900.0, 'min': 0.0, 'max': 0.0}, {'current': 2900.0, 'min': 0.0, 'max': 0.0}, {'current': 2900.0, 'min': 0.0, 'max': 0.0}], 'disk': {'/': {'total': 590.5831604003906, 'used': 0.764129638671875}}, 'gpu': 'NVIDIA A100-SXM4-80GB', 'gpu_count': 4, 'gpu_devices': [{'name': 'NVIDIA A100-SXM4-80GB', 'memory_total': 85198045184}, {'name': 'NVIDIA A100-SXM4-80GB', 'memory_total': 85198045184}, {'name': 'NVIDIA A100-SXM4-80GB', 'memory_total': 85198045184}, {'name': 'NVIDIA A100-SXM4-80GB', 'memory_total': 85198045184}], 'memory': {'total': 206.6252555847168}}
+2024-04-11 16:42:10,106 INFO    HandlerThread:79135 [system_monitor.py:probe():224] Finished collecting system info
+2024-04-11 16:42:10,106 INFO    HandlerThread:79135 [system_monitor.py:probe():227] Publishing system info
+2024-04-11 16:42:10,106 DEBUG   HandlerThread:79135 [system_info.py:_save_conda():208] Saving list of conda packages installed into the current environment
+2024-04-11 16:42:10,534 INFO    Thread-12 :79135 [dir_watcher.py:_on_file_created():271] file/dir created: /cpfs01/shared/public/yz/Llama-Factory/wandb/run-20240411_164208-p1ijq4t4/files/conda-environment.yaml
+2024-04-11 16:42:13,687 DEBUG   HandlerThread:79135 [system_info.py:_save_conda():220] Saving conda packages done
+2024-04-11 16:42:13,691 INFO    HandlerThread:79135 [system_monitor.py:probe():229] Finished publishing system info
+2024-04-11 16:42:13,697 DEBUG   SenderThread:79135 [sender.py:send():382] send: files
+2024-04-11 16:42:13,697 INFO    SenderThread:79135 [sender.py:_save_file():1403] saving file wandb-metadata.json with policy now
+2024-04-11 16:42:13,699 DEBUG   HandlerThread:79135 [handler.py:handle_request():146] handle_request: status_report
+2024-04-11 16:42:13,703 DEBUG   HandlerThread:79135 [handler.py:handle_request():146] handle_request: python_packages
+2024-04-11 16:42:13,703 DEBUG   SenderThread:79135 [sender.py:send_request():409] send_request: python_packages
+2024-04-11 16:42:13,704 DEBUG   HandlerThread:79135 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-11 16:42:13,705 DEBUG   HandlerThread:79135 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-11 16:42:13,706 DEBUG   SenderThread:79135 [sender.py:send_request():409] send_request: stop_status
+2024-04-11 16:42:14,512 DEBUG   SenderThread:79135 [sender.py:send():382] send: telemetry
+2024-04-11 16:42:14,512 DEBUG   SenderThread:79135 [sender.py:send():382] send: config
+2024-04-11 16:42:14,513 DEBUG   SenderThread:79135 [sender.py:send():382] send: metric
+2024-04-11 16:42:14,513 DEBUG   SenderThread:79135 [sender.py:send():382] send: telemetry
+2024-04-11 16:42:14,513 DEBUG   SenderThread:79135 [sender.py:send():382] send: metric
+2024-04-11 16:42:14,513 WARNING SenderThread:79135 [sender.py:send_metric():1354] Seen metric with glob (shouldn't happen)
+2024-04-11 16:42:14,513 DEBUG   SenderThread:79135 [sender.py:send():382] send: telemetry
+2024-04-11 16:42:14,539 INFO    Thread-12 :79135 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cpfs01/shared/public/yz/Llama-Factory/wandb/run-20240411_164208-p1ijq4t4/files/conda-environment.yaml
+2024-04-11 16:42:14,540 INFO    Thread-12 :79135 [dir_watcher.py:_on_file_created():271] file/dir created: /cpfs01/shared/public/yz/Llama-Factory/wandb/run-20240411_164208-p1ijq4t4/files/wandb-metadata.json
+2024-04-11 16:42:14,540 INFO    Thread-12 :79135 [dir_watcher.py:_on_file_created():271] file/dir created: /cpfs01/shared/public/yz/Llama-Factory/wandb/run-20240411_164208-p1ijq4t4/files/requirements.txt
+2024-04-11 16:42:14,540 INFO    Thread-12 :79135 [dir_watcher.py:_on_file_created():271] file/dir created: /cpfs01/shared/public/yz/Llama-Factory/wandb/run-20240411_164208-p1ijq4t4/files/output.log
+2024-04-11 16:42:14,884 INFO    wandb-upload_0:79135 [upload_job.py:push():131] Uploaded file /tmp/tmpb_2o66frwandb/us6e7dvt-wandb-metadata.json
+2024-04-11 16:42:16,543 INFO    Thread-12 :79135 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cpfs01/shared/public/yz/Llama-Factory/wandb/run-20240411_164208-p1ijq4t4/files/output.log
+2024-04-11 16:42:19,516 DEBUG   HandlerThread:79135 [handler.py:handle_request():146] handle_request: status_report
+2024-04-11 16:42:22,555 INFO    Thread-12 :79135 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cpfs01/shared/public/yz/Llama-Factory/wandb/run-20240411_164208-p1ijq4t4/files/output.log
+2024-04-11 16:42:23,557 INFO    Thread-12 :79135 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cpfs01/shared/public/yz/Llama-Factory/wandb/run-20240411_164208-p1ijq4t4/files/output.log
+2024-04-11 16:42:24,907 DEBUG   HandlerThread:79135 [handler.py:handle_request():146] handle_request: status_report
+2024-04-11 16:42:28,567 INFO    Thread-12 :79135 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cpfs01/shared/public/yz/Llama-Factory/wandb/run-20240411_164208-p1ijq4t4/files/output.log
+2024-04-11 16:42:28,704 DEBUG   HandlerThread:79135 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-11 16:42:28,704 DEBUG   HandlerThread:79135 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-11 16:42:28,704 DEBUG   SenderThread:79135 [sender.py:send_request():409] send_request: stop_status
+2024-04-11 16:42:29,569 INFO    Thread-12 :79135 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cpfs01/shared/public/yz/Llama-Factory/wandb/run-20240411_164208-p1ijq4t4/files/output.log
+2024-04-11 16:42:30,015 DEBUG   HandlerThread:79135 [handler.py:handle_request():146] handle_request: status_report
+2024-04-11 16:42:34,579 INFO    Thread-12 :79135 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cpfs01/shared/public/yz/Llama-Factory/wandb/run-20240411_164208-p1ijq4t4/files/output.log
+2024-04-11 16:42:35,581 INFO    Thread-12 :79135 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cpfs01/shared/public/yz/Llama-Factory/wandb/run-20240411_164208-p1ijq4t4/files/output.log
+2024-04-11 16:42:35,743 DEBUG   HandlerThread:79135 [handler.py:handle_request():146] handle_request: status_report
+2024-04-11 16:42:37,068 DEBUG   SenderThread:79135 [sender.py:send():382] send: exit
+2024-04-11 16:42:37,068 INFO    SenderThread:79135 [sender.py:send_exit():589] handling exit code: 255
+2024-04-11 16:42:37,069 INFO    SenderThread:79135 [sender.py:send_exit():591] handling runtime: 27
+2024-04-11 16:42:37,070 INFO    SenderThread:79135 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-04-11 16:42:37,070 INFO    SenderThread:79135 [sender.py:send_exit():597] send defer
+2024-04-11 16:42:37,070 DEBUG   HandlerThread:79135 [handler.py:handle_request():146] handle_request: defer
+2024-04-11 16:42:37,070 INFO    HandlerThread:79135 [handler.py:handle_request_defer():172] handle defer: 0
+2024-04-11 16:42:37,071 DEBUG   SenderThread:79135 [sender.py:send_request():409] send_request: defer
+2024-04-11 16:42:37,071 INFO    SenderThread:79135 [sender.py:send_request_defer():613] handle sender defer: 0
+2024-04-11 16:42:37,071 INFO    SenderThread:79135 [sender.py:transition_state():617] send defer: 1
+2024-04-11 16:42:37,071 DEBUG   HandlerThread:79135 [handler.py:handle_request():146] handle_request: defer
+2024-04-11 16:42:37,071 INFO    HandlerThread:79135 [handler.py:handle_request_defer():172] handle defer: 1
+2024-04-11 16:42:37,071 DEBUG   SenderThread:79135 [sender.py:send_request():409] send_request: defer
+2024-04-11 16:42:37,071 INFO    SenderThread:79135 [sender.py:send_request_defer():613] handle sender defer: 1
+2024-04-11 16:42:37,071 INFO    SenderThread:79135 [sender.py:transition_state():617] send defer: 2
+2024-04-11 16:42:37,072 DEBUG   HandlerThread:79135 [handler.py:handle_request():146] handle_request: defer
+2024-04-11 16:42:37,072 INFO    HandlerThread:79135 [handler.py:handle_request_defer():172] handle defer: 2
+2024-04-11 16:42:37,072 INFO    HandlerThread:79135 [system_monitor.py:finish():203] Stopping system monitor
+2024-04-11 16:42:37,072 DEBUG   SystemMonitor:79135 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-04-11 16:42:37,072 DEBUG   SystemMonitor:79135 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-04-11 16:42:37,072 INFO    HandlerThread:79135 [interfaces.py:finish():202] Joined cpu monitor
+2024-04-11 16:42:37,072 DEBUG   SystemMonitor:79135 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-04-11 16:42:37,073 INFO    HandlerThread:79135 [interfaces.py:finish():202] Joined disk monitor
+2024-04-11 16:42:37,110 INFO    HandlerThread:79135 [interfaces.py:finish():202] Joined gpu monitor
+2024-04-11 16:42:37,111 INFO    HandlerThread:79135 [interfaces.py:finish():202] Joined memory monitor
+2024-04-11 16:42:37,111 INFO    HandlerThread:79135 [interfaces.py:finish():202] Joined network monitor
+2024-04-11 16:42:37,111 DEBUG   SenderThread:79135 [sender.py:send_request():409] send_request: defer
+2024-04-11 16:42:37,111 INFO    SenderThread:79135 [sender.py:send_request_defer():613] handle sender defer: 2
+2024-04-11 16:42:37,111 INFO    SenderThread:79135 [sender.py:transition_state():617] send defer: 3
+2024-04-11 16:42:37,112 DEBUG   SenderThread:79135 [sender.py:send():382] send: stats
+2024-04-11 16:42:37,112 DEBUG   HandlerThread:79135 [handler.py:handle_request():146] handle_request: defer
+2024-04-11 16:42:37,112 INFO    HandlerThread:79135 [handler.py:handle_request_defer():172] handle defer: 3
+2024-04-11 16:42:37,112 DEBUG   SenderThread:79135 [sender.py:send_request():409] send_request: defer
+2024-04-11 16:42:37,112 INFO    SenderThread:79135 [sender.py:send_request_defer():613] handle sender defer: 3
+2024-04-11 16:42:37,112 INFO    SenderThread:79135 [sender.py:transition_state():617] send defer: 4
+2024-04-11 16:42:37,113 DEBUG   HandlerThread:79135 [handler.py:handle_request():146] handle_request: defer
+2024-04-11 16:42:37,113 INFO    HandlerThread:79135 [handler.py:handle_request_defer():172] handle defer: 4
+2024-04-11 16:42:37,113 DEBUG   SenderThread:79135 [sender.py:send_request():409] send_request: defer
+2024-04-11 16:42:37,113 INFO    SenderThread:79135 [sender.py:send_request_defer():613] handle sender defer: 4
+2024-04-11 16:42:37,113 INFO    SenderThread:79135 [sender.py:transition_state():617] send defer: 5
+2024-04-11 16:42:37,113 DEBUG   HandlerThread:79135 [handler.py:handle_request():146] handle_request: defer
+2024-04-11 16:42:37,113 INFO    HandlerThread:79135 [handler.py:handle_request_defer():172] handle defer: 5
+2024-04-11 16:42:37,114 DEBUG   SenderThread:79135 [sender.py:send():382] send: summary
+2024-04-11 16:42:37,114 INFO    SenderThread:79135 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-04-11 16:42:37,115 DEBUG   SenderThread:79135 [sender.py:send_request():409] send_request: defer
+2024-04-11 16:42:37,115 INFO    SenderThread:79135 [sender.py:send_request_defer():613] handle sender defer: 5
+2024-04-11 16:42:37,115 INFO    SenderThread:79135 [sender.py:transition_state():617] send defer: 6
+2024-04-11 16:42:37,115 DEBUG   HandlerThread:79135 [handler.py:handle_request():146] handle_request: defer
+2024-04-11 16:42:37,115 INFO    HandlerThread:79135 [handler.py:handle_request_defer():172] handle defer: 6
+2024-04-11 16:42:37,115 DEBUG   SenderThread:79135 [sender.py:send_request():409] send_request: defer
+2024-04-11 16:42:37,115 INFO    SenderThread:79135 [sender.py:send_request_defer():613] handle sender defer: 6
+2024-04-11 16:42:37,119 DEBUG   HandlerThread:79135 [handler.py:handle_request():146] handle_request: status_report
+2024-04-11 16:42:37,585 INFO    Thread-12 :79135 [dir_watcher.py:_on_file_created():271] file/dir created: /cpfs01/shared/public/yz/Llama-Factory/wandb/run-20240411_164208-p1ijq4t4/files/wandb-summary.json
+2024-04-11 16:42:37,616 INFO    SenderThread:79135 [sender.py:transition_state():617] send defer: 7
+2024-04-11 16:42:37,616 DEBUG   HandlerThread:79135 [handler.py:handle_request():146] handle_request: defer
+2024-04-11 16:42:37,616 INFO    HandlerThread:79135 [handler.py:handle_request_defer():172] handle defer: 7
+2024-04-11 16:42:37,617 DEBUG   SenderThread:79135 [sender.py:send_request():409] send_request: defer
+2024-04-11 16:42:37,617 INFO    SenderThread:79135 [sender.py:send_request_defer():613] handle sender defer: 7
+2024-04-11 16:42:38,068 DEBUG   HandlerThread:79135 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-11 16:42:38,587 INFO    Thread-12 :79135 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cpfs01/shared/public/yz/Llama-Factory/wandb/run-20240411_164208-p1ijq4t4/files/config.yaml
+2024-04-11 16:42:38,587 INFO    Thread-12 :79135 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cpfs01/shared/public/yz/Llama-Factory/wandb/run-20240411_164208-p1ijq4t4/files/output.log
+2024-04-11 16:42:38,928 INFO    SenderThread:79135 [sender.py:transition_state():617] send defer: 8
+2024-04-11 16:42:38,929 DEBUG   SenderThread:79135 [sender.py:send_request():409] send_request: poll_exit
+2024-04-11 16:42:38,929 DEBUG   HandlerThread:79135 [handler.py:handle_request():146] handle_request: defer
+2024-04-11 16:42:38,929 INFO    HandlerThread:79135 [handler.py:handle_request_defer():172] handle defer: 8
+2024-04-11 16:42:38,929 DEBUG   SenderThread:79135 [sender.py:send_request():409] send_request: defer
+2024-04-11 16:42:38,929 INFO    SenderThread:79135 [sender.py:send_request_defer():613] handle sender defer: 8
+2024-04-11 16:42:38,930 INFO    SenderThread:79135 [job_builder.py:build():296] Attempting to build job artifact
+2024-04-11 16:42:38,931 INFO    SenderThread:79135 [job_builder.py:_get_source_type():437] no source found
+2024-04-11 16:42:38,932 INFO    SenderThread:79135 [sender.py:transition_state():617] send defer: 9
+2024-04-11 16:42:38,932 DEBUG   HandlerThread:79135 [handler.py:handle_request():146] handle_request: defer
+2024-04-11 16:42:38,932 INFO    HandlerThread:79135 [handler.py:handle_request_defer():172] handle defer: 9
+2024-04-11 16:42:38,932 DEBUG   SenderThread:79135 [sender.py:send_request():409] send_request: defer
+2024-04-11 16:42:38,932 INFO    SenderThread:79135 [sender.py:send_request_defer():613] handle sender defer: 9
+2024-04-11 16:42:38,932 INFO    SenderThread:79135 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-04-11 16:42:39,069 DEBUG   HandlerThread:79135 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-11 16:42:39,590 INFO    SenderThread:79135 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cpfs01/shared/public/yz/Llama-Factory/wandb/run-20240411_164208-p1ijq4t4/files/output.log
+2024-04-11 16:42:39,591 INFO    SenderThread:79135 [dir_watcher.py:finish():388] scan: /cpfs01/shared/public/yz/Llama-Factory/wandb/run-20240411_164208-p1ijq4t4/files
+2024-04-11 16:42:39,591 INFO    SenderThread:79135 [dir_watcher.py:finish():402] scan save: /cpfs01/shared/public/yz/Llama-Factory/wandb/run-20240411_164208-p1ijq4t4/files/conda-environment.yaml conda-environment.yaml
+2024-04-11 16:42:39,592 INFO    SenderThread:79135 [dir_watcher.py:finish():402] scan save: /cpfs01/shared/public/yz/Llama-Factory/wandb/run-20240411_164208-p1ijq4t4/files/wandb-metadata.json wandb-metadata.json
+2024-04-11 16:42:39,592 INFO    SenderThread:79135 [dir_watcher.py:finish():402] scan save: /cpfs01/shared/public/yz/Llama-Factory/wandb/run-20240411_164208-p1ijq4t4/files/config.yaml config.yaml
+2024-04-11 16:42:39,595 INFO    SenderThread:79135 [dir_watcher.py:finish():402] scan save: /cpfs01/shared/public/yz/Llama-Factory/wandb/run-20240411_164208-p1ijq4t4/files/requirements.txt requirements.txt
+2024-04-11 16:42:39,597 INFO    SenderThread:79135 [dir_watcher.py:finish():402] scan save: /cpfs01/shared/public/yz/Llama-Factory/wandb/run-20240411_164208-p1ijq4t4/files/wandb-summary.json wandb-summary.json
+2024-04-11 16:42:39,599 INFO    SenderThread:79135 [dir_watcher.py:finish():402] scan save: /cpfs01/shared/public/yz/Llama-Factory/wandb/run-20240411_164208-p1ijq4t4/files/output.log output.log
+2024-04-11 16:42:39,602 INFO    SenderThread:79135 [sender.py:transition_state():617] send defer: 10
+2024-04-11 16:42:39,602 DEBUG   SenderThread:79135 [sender.py:send_request():409] send_request: poll_exit
+2024-04-11 16:42:39,604 DEBUG   HandlerThread:79135 [handler.py:handle_request():146] handle_request: defer
+2024-04-11 16:42:39,604 INFO    HandlerThread:79135 [handler.py:handle_request_defer():172] handle defer: 10
+2024-04-11 16:42:39,604 DEBUG   SenderThread:79135 [sender.py:send_request():409] send_request: defer
+2024-04-11 16:42:39,604 INFO    SenderThread:79135 [sender.py:send_request_defer():613] handle sender defer: 10
+2024-04-11 16:42:39,604 INFO    SenderThread:79135 [file_pusher.py:finish():175] shutting down file pusher
+2024-04-11 16:42:40,069 DEBUG   HandlerThread:79135 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-11 16:42:40,070 DEBUG   SenderThread:79135 [sender.py:send_request():409] send_request: poll_exit
+2024-04-11 16:42:40,190 INFO    wandb-upload_1:79135 [upload_job.py:push():131] Uploaded file /cpfs01/shared/public/yz/Llama-Factory/wandb/run-20240411_164208-p1ijq4t4/files/config.yaml
+2024-04-11 16:42:40,387 INFO    wandb-upload_0:79135 [upload_job.py:push():131] Uploaded file /cpfs01/shared/public/yz/Llama-Factory/wandb/run-20240411_164208-p1ijq4t4/files/conda-environment.yaml
+2024-04-11 16:42:40,991 INFO    wandb-upload_2:79135 [upload_job.py:push():131] Uploaded file /cpfs01/shared/public/yz/Llama-Factory/wandb/run-20240411_164208-p1ijq4t4/files/requirements.txt
+2024-04-11 16:42:41,070 DEBUG   HandlerThread:79135 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-11 16:42:41,070 DEBUG   SenderThread:79135 [sender.py:send_request():409] send_request: poll_exit
+2024-04-11 16:42:41,234 INFO    wandb-upload_3:79135 [upload_job.py:push():131] Uploaded file /cpfs01/shared/public/yz/Llama-Factory/wandb/run-20240411_164208-p1ijq4t4/files/wandb-summary.json
+2024-04-11 16:42:41,654 INFO    wandb-upload_4:79135 [upload_job.py:push():131] Uploaded file /cpfs01/shared/public/yz/Llama-Factory/wandb/run-20240411_164208-p1ijq4t4/files/output.log
+2024-04-11 16:42:41,854 INFO    Thread-11 :79135 [sender.py:transition_state():617] send defer: 11
+2024-04-11 16:42:41,855 DEBUG   HandlerThread:79135 [handler.py:handle_request():146] handle_request: defer
+2024-04-11 16:42:41,855 INFO    HandlerThread:79135 [handler.py:handle_request_defer():172] handle defer: 11
+2024-04-11 16:42:41,856 DEBUG   SenderThread:79135 [sender.py:send_request():409] send_request: defer
+2024-04-11 16:42:41,856 INFO    SenderThread:79135 [sender.py:send_request_defer():613] handle sender defer: 11
+2024-04-11 16:42:41,856 INFO    SenderThread:79135 [file_pusher.py:join():181] waiting for file pusher
+2024-04-11 16:42:41,856 INFO    SenderThread:79135 [sender.py:transition_state():617] send defer: 12
+2024-04-11 16:42:41,856 DEBUG   HandlerThread:79135 [handler.py:handle_request():146] handle_request: defer
+2024-04-11 16:42:41,856 INFO    HandlerThread:79135 [handler.py:handle_request_defer():172] handle defer: 12
+2024-04-11 16:42:41,856 DEBUG   SenderThread:79135 [sender.py:send_request():409] send_request: defer
+2024-04-11 16:42:41,857 INFO    SenderThread:79135 [sender.py:send_request_defer():613] handle sender defer: 12
+2024-04-11 16:42:41,857 INFO    SenderThread:79135 [file_stream.py:finish():595] file stream finish called
+2024-04-11 16:42:42,071 DEBUG   HandlerThread:79135 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-11 16:42:42,094 INFO    SenderThread:79135 [file_stream.py:finish():599] file stream finish is done
+2024-04-11 16:42:42,094 INFO    SenderThread:79135 [sender.py:transition_state():617] send defer: 13
+2024-04-11 16:42:42,094 DEBUG   SenderThread:79135 [sender.py:send_request():409] send_request: poll_exit
+2024-04-11 16:42:42,094 DEBUG   HandlerThread:79135 [handler.py:handle_request():146] handle_request: defer
+2024-04-11 16:42:42,095 INFO    HandlerThread:79135 [handler.py:handle_request_defer():172] handle defer: 13
+2024-04-11 16:42:42,095 DEBUG   SenderThread:79135 [sender.py:send_request():409] send_request: defer
+2024-04-11 16:42:42,095 INFO    SenderThread:79135 [sender.py:send_request_defer():613] handle sender defer: 13
+2024-04-11 16:42:42,095 INFO    SenderThread:79135 [sender.py:transition_state():617] send defer: 14
+2024-04-11 16:42:42,095 DEBUG   SenderThread:79135 [sender.py:send():382] send: final
+2024-04-11 16:42:42,095 DEBUG   HandlerThread:79135 [handler.py:handle_request():146] handle_request: defer
+2024-04-11 16:42:42,095 DEBUG   SenderThread:79135 [sender.py:send():382] send: footer
+2024-04-11 16:42:42,096 INFO    HandlerThread:79135 [handler.py:handle_request_defer():172] handle defer: 14
+2024-04-11 16:42:42,096 DEBUG   SenderThread:79135 [sender.py:send_request():409] send_request: defer
+2024-04-11 16:42:42,096 INFO    SenderThread:79135 [sender.py:send_request_defer():613] handle sender defer: 14
+2024-04-11 16:42:42,096 DEBUG   HandlerThread:79135 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-11 16:42:42,096 DEBUG   HandlerThread:79135 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-11 16:42:42,097 DEBUG   HandlerThread:79135 [handler.py:handle_request():146] handle_request: server_info
+2024-04-11 16:42:42,097 DEBUG   SenderThread:79135 [sender.py:send_request():409] send_request: poll_exit
+2024-04-11 16:42:42,097 DEBUG   HandlerThread:79135 [handler.py:handle_request():146] handle_request: get_summary
+2024-04-11 16:42:42,097 DEBUG   SenderThread:79135 [sender.py:send_request():409] send_request: poll_exit
+2024-04-11 16:42:42,097 DEBUG   HandlerThread:79135 [handler.py:handle_request():146] handle_request: sampled_history
+2024-04-11 16:42:42,098 DEBUG   SenderThread:79135 [sender.py:send_request():409] send_request: server_info
+2024-04-11 16:42:42,098 DEBUG   HandlerThread:79135 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-11 16:42:42,100 DEBUG   HandlerThread:79135 [handler.py:handle_request():146] handle_request: job_info
+2024-04-11 16:42:42,349 DEBUG   SenderThread:79135 [sender.py:send_request():409] send_request: job_info
+2024-04-11 16:42:42,349 INFO    MainThread:79135 [wandb_run.py:_footer_history_summary_info():3857] rendering history
+2024-04-11 16:42:42,349 INFO    MainThread:79135 [wandb_run.py:_footer_history_summary_info():3889] rendering summary
+2024-04-11 16:42:42,350 INFO    MainThread:79135 [wandb_run.py:_footer_sync_info():3816] logging synced files
+2024-04-11 16:42:42,350 DEBUG   HandlerThread:79135 [handler.py:handle_request():146] handle_request: shutdown
+2024-04-11 16:42:42,350 INFO    HandlerThread:79135 [handler.py:finish():869] shutting down handler
+2024-04-11 16:42:43,100 INFO    WriterThread:79135 [datastore.py:close():296] close: /cpfs01/shared/public/yz/Llama-Factory/wandb/run-20240411_164208-p1ijq4t4/run-p1ijq4t4.wandb
+2024-04-11 16:42:43,349 INFO    SenderThread:79135 [sender.py:finish():1572] shutting down sender
+2024-04-11 16:42:43,350 INFO    SenderThread:79135 [file_pusher.py:finish():175] shutting down file pusher
+2024-04-11 16:42:43,350 INFO    SenderThread:79135 [file_pusher.py:join():181] waiting for file pusher

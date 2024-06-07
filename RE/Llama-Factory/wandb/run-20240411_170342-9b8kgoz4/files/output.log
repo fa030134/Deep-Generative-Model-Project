@@ -1,0 +1,118 @@
+
+
+  1%|▉                                                                           | 1/82 [00:05<06:47,  5.03s/it]
+
+  2%|█▊                                                                          | 2/82 [00:09<06:00,  4.50s/it]
+[2024-04-11 17:03:57,391] [INFO] [loss_scaler.py:183:update_scale] [deepspeed] OVERFLOW! Rank 0 Skipping step. Attempted loss scale: 2147483648, reducing to 1073741824
+
+  4%|██▊                                                                         | 3/82 [00:14<06:08,  4.66s/it]
+
+  5%|███▋                                                                        | 4/82 [00:18<05:57,  4.58s/it]
+
+  6%|████▋                                                                       | 5/82 [00:22<05:45,  4.49s/it]
+
+  7%|█████▌                                                                      | 6/82 [00:27<05:54,  4.66s/it]
+
+  9%|██████▍                                                                     | 7/82 [00:32<05:54,  4.72s/it]
+
+ 10%|███████▍                                                                    | 8/82 [00:37<05:56,  4.82s/it]
+
+ 11%|████████▎                                                                   | 9/82 [00:42<05:56,  4.88s/it]
+[2024-04-11 17:04:35,921] [INFO] [loss_scaler.py:183:update_scale] [deepspeed] OVERFLOW! Rank 0 Skipping step. Attempted loss scale: 8388608, reducing to 4194304
+
+ 12%|█████████▏                                                                 | 10/82 [00:47<05:54,  4.92s/it]
+
+ 13%|██████████                                                                 | 11/82 [00:52<05:52,  4.96s/it]
+
+ 15%|██████████▉                                                                | 12/82 [00:57<05:48,  4.98s/it]
+
+ 16%|███████████▉                                                               | 13/82 [01:02<05:44,  4.99s/it]
+
+
+ 18%|█████████████▋                                                             | 15/82 [01:12<05:24,  4.85s/it]
+
+
+
+
+ 23%|█████████████████▍                                                         | 19/82 [01:32<05:15,  5.01s/it]
+
+ 24%|██████████████████▎                                                        | 20/82 [01:37<05:10,  5.01s/it]
+[2024-04-11 17:05:29,790] [INFO] [logging.py:96:log_dist] [Rank 0] [Torch] Checkpoint global_step20 is about to be saved!
+[2024-04-11 17:05:29,802] [INFO] [logging.py:96:log_dist] [Rank 0] Saving model checkpoint: /cpfs01/user/yz426382/test/checkpoint-20/global_step20/mp_rank_00_model_states.pt
+[2024-04-11 17:05:29,803] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /cpfs01/user/yz426382/test/checkpoint-20/global_step20/mp_rank_00_model_states.pt...
+[2024-04-11 17:05:29,831] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /cpfs01/user/yz426382/test/checkpoint-20/global_step20/mp_rank_00_model_states.pt.
+[2024-04-11 17:05:29,832] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /cpfs01/user/yz426382/test/checkpoint-20/global_step20/zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2024-04-11 17:05:29,886] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /cpfs01/user/yz426382/test/checkpoint-20/global_step20/zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2024-04-11 17:05:29,892] [INFO] [engine.py:3431:_save_zero_checkpoint] zero checkpoint saved /cpfs01/user/yz426382/test/checkpoint-20/global_step20/zero_pp_rank_0_mp_rank_00_optim_states.pt
+ 24%|██████████████████▎                                                        | 20/82 [01:37<05:10,  5.01s/it][INFO|trainer.py:3203] 2024-04-11 17:05:29,651 >> Saving model checkpoint to /cpfs01/user/yz426382/test/checkpoint-20
+/opt/conda/lib/python3.8/site-packages/peft/utils/save_and_load.py:154: UserWarning: Could not find a config file in /cpfs01/shared/public/yz/.cache/ds_llm_7b_chat/ - will assume that the vocabulary was not modified.
+  warnings.warn(
+[INFO|tokenization_utils_base.py:2502] 2024-04-11 17:05:29,698 >> tokenizer config file saved in /cpfs01/user/yz426382/test/checkpoint-20/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2511] 2024-04-11 17:05:29,699 >> Special tokens file saved in /cpfs01/user/yz426382/test/checkpoint-20/special_tokens_map.json
+/opt/conda/lib/python3.8/site-packages/torch/nn/modules/module.py:1802: UserWarning: Positional args are being deprecated, use kwargs instead. Refer to https://pytorch.org/docs/master/generated/torch.nn.Module.html#torch.nn.Module.state_dict for details.
+  warnings.warn(
+[2024-04-11 17:05:34,790] [INFO] [loss_scaler.py:183:update_scale] [deepspeed] OVERFLOW! Rank 0 Skipping step. Attempted loss scale: 131072, reducing to 65536
+
+
+
+
+
+
+
+
+ 35%|██████████████████████████▌                                                | 29/82 [02:25<04:22,  4.96s/it]
+
+
+
+
+
+
+
+ 44%|████████████████████████████████▉                                          | 36/82 [02:57<03:34,  4.67s/it]Traceback (most recent call last):
+  File "src/train_bash.py", line 14, in <module>
+    main()
+  File "src/train_bash.py", line 5, in main
+    run_exp()
+  File "/cpfs01/shared/public/yz/Llama-Factory/src/llmtuner/train/tuner.py", line 26, in run_exp
+    run_sft(model_args, data_args, training_args, finetuning_args, generating_args, callbacks)
+  File "/cpfs01/shared/public/yz/Llama-Factory/src/llmtuner/train/sft/workflow.py", line 68, in run_sft
+    train_result = trainer.train(resume_from_checkpoint=training_args.resume_from_checkpoint)
+  File "/opt/conda/lib/python3.8/site-packages/transformers/trainer.py", line 1780, in train
+    return inner_training_loop(
+  File "/opt/conda/lib/python3.8/site-packages/transformers/trainer.py", line 2118, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs)
+  File "/opt/conda/lib/python3.8/site-packages/transformers/trainer.py", line 3045, in training_step
+    self.accelerator.backward(loss)
+  File "/opt/conda/lib/python3.8/site-packages/accelerate/accelerator.py", line 2007, in backward
+    self.deepspeed_engine_wrapped.backward(loss, **kwargs)
+  File "/opt/conda/lib/python3.8/site-packages/accelerate/utils/deepspeed.py", line 166, in backward
+    self.engine.backward(loss, **kwargs)
+  File "/opt/conda/lib/python3.8/site-packages/deepspeed/utils/nvtx.py", line 15, in wrapped_fn
+    ret_val = func(*args, **kwargs)
+  File "/opt/conda/lib/python3.8/site-packages/deepspeed/runtime/engine.py", line 1935, in backward
+    self.losses += loss.mean().item()
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "src/train_bash.py", line 14, in <module>
+    main()
+  File "src/train_bash.py", line 5, in main
+    run_exp()
+  File "/cpfs01/shared/public/yz/Llama-Factory/src/llmtuner/train/tuner.py", line 26, in run_exp
+    run_sft(model_args, data_args, training_args, finetuning_args, generating_args, callbacks)
+  File "/cpfs01/shared/public/yz/Llama-Factory/src/llmtuner/train/sft/workflow.py", line 68, in run_sft
+    train_result = trainer.train(resume_from_checkpoint=training_args.resume_from_checkpoint)
+  File "/opt/conda/lib/python3.8/site-packages/transformers/trainer.py", line 1780, in train
+    return inner_training_loop(
+  File "/opt/conda/lib/python3.8/site-packages/transformers/trainer.py", line 2118, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs)
+  File "/opt/conda/lib/python3.8/site-packages/transformers/trainer.py", line 3045, in training_step
+    self.accelerator.backward(loss)
+  File "/opt/conda/lib/python3.8/site-packages/accelerate/accelerator.py", line 2007, in backward
+    self.deepspeed_engine_wrapped.backward(loss, **kwargs)
+  File "/opt/conda/lib/python3.8/site-packages/accelerate/utils/deepspeed.py", line 166, in backward
+    self.engine.backward(loss, **kwargs)
+  File "/opt/conda/lib/python3.8/site-packages/deepspeed/utils/nvtx.py", line 15, in wrapped_fn
+    ret_val = func(*args, **kwargs)
+  File "/opt/conda/lib/python3.8/site-packages/deepspeed/runtime/engine.py", line 1935, in backward
+    self.losses += loss.mean().item()
+KeyboardInterrupt
